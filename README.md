@@ -7,13 +7,18 @@ This repository contains a Node.js/Express application that provides two endpoin
 
 ## Getting Started
 
-1. **Install dependencies**
+1. **Clone the repository**
    ```bash
-   cd d:/node.js/assign
+   git clone https://github.com/harsh7124/school-management-api.git
+   cd school-management-api
+   ```
+
+2. **Install dependencies**
+   ```bash
    npm install
    ```
 
-2. **Create MySQL database and table**
+3. **Create MySQL database and table**
    - Run the SQL script in `scripts/create_table.sql` or execute manually:
      ```sql
      CREATE DATABASE IF NOT EXISTS schooldb;
@@ -28,23 +33,23 @@ This repository contains a Node.js/Express application that provides two endpoin
      );
      ```
 
-3. **Configuration**
+4. **Configuration**
    - Copy `.env.example` to `.env` and update values with your MySQL credentials:
      ```ini
      DB_HOST=localhost
      DB_USER=root
-     DB_PASSWORD=secret
+     DB_PASSWORD=yourpassword
      DB_NAME=schooldb
      PORT=3000
      ```
 
-4. **Run the application**
+5. **Run the application**
    ```bash
    npm run dev # for development with nodemon
    npm start   # to run once
    ```
 
-5. **Testing**
+6. **Testing**
    - Import the Postman collection located at `postman/SchoolManagement.postman_collection.json` and execute the requests.
 
 ## API Endpoints
